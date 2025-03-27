@@ -114,6 +114,13 @@ class _QuizScreenState extends State<QuizScreen> {
     if (_loading) {
       return const Scaffold(body: Center(child: CircularProgressIndicator()));
     }
+    if (_questions.isEmpty || _currentIndex >= _questions.length) {
+      return Scaffold(
+          body: const Center(child: Text("No questions available")));
+    }
+    if (_questions.isEmpty) {
+      Navigator.pop(context);
+    }
 
     return Scaffold(
       appBar: AppBar(
