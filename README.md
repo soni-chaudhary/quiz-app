@@ -2,10 +2,10 @@
 
 A new Flutter project.
 
-# quiz_app📚 Flutter Quiz App with Groq API
+# quiz_app Flutter Quiz App with Groq API
 This is a Flutter-based quiz application that dynamically generates quiz questions using the Groq API. The project follows the BLoC (Business Logic Component) pattern for state management, ensuring scalability and efficiency.
 
-🚀 Features
+# Features
 # Dynamic Quiz Generation: Fetches quiz questions from the Groq API.
 
 # BLoC State Management: Ensures structured state handling.
@@ -18,7 +18,7 @@ User Feedback: Provides instant validation of answers.
 
 Clean Architecture: Follows best practices in file structuring.
 
-📂 Project Structure
+# Project Structure
 graphql
 Copy
 Edit
@@ -48,26 +48,26 @@ lib/
 │   ├── constants.dart   # App-wide constants  
 │  
 └── main.dart            # Entry point of the application  
-🔧 Setup & Installation
-1️⃣ Clone the Repository
+# Setup & Installation
+# 1️ Clone the Repository
 sh
 Copy
 Edit
 git clone https://github.com/your-repo/flutter-quiz-app.git  
 cd flutter-quiz-app  
-2️⃣ Install Dependencies
+# 2️ Install Dependencies
 sh
 Copy
 Edit
 flutter pub get  
-3️⃣ Add API Key
+# 3️ Add API Key
 Create a .env file in the root directory and add your Groq API key:
 
 env
 Copy
 Edit
 GROQ_API_KEY=your_api_key_here  
-4️⃣ Run the App
+# 4️ Run the App
 sh
 Copy
 Edit
@@ -99,8 +99,8 @@ Edit
   "options": ["A H2O", "B CO2", "C O2", "D CH4"],  
   "answer": "A H2O"  
 }  
-📌 BLoC Implementation
-1️⃣ Define Events (quiz_event.dart)
+# BLoC Implementation
+# 1️ Define Events (quiz_event.dart)
 dart
 Copy
 Edit
@@ -111,7 +111,7 @@ class FetchQuiz extends QuizEvent {
   final String difficulty;  
   FetchQuiz(this.topic, this.difficulty);  
 }  
-2️⃣ Define States (quiz_state.dart)
+# 2️ Define States (quiz_state.dart)
 dart
 Copy
 Edit
@@ -127,7 +127,7 @@ class QuizError extends QuizState {
   final String message;  
   QuizError(this.message);  
 }  
-3️⃣ Implement BLoC (quiz_bloc.dart)
+# 3 Implement BLoC (quiz_bloc.dart)
 dart
 Copy
 Edit
@@ -152,7 +152,7 @@ class QuizBloc extends Bloc<QuizEvent, QuizState> {
     }  
   }  
 }  
-🎨 UI Screens
+# UI Screens
 Home Screen (home_screen.dart)
 dart
 Copy
@@ -216,7 +216,7 @@ class QuizScreen extends StatelessWidget {
     );  
   }  
 }  
-🎯 To Do
+# To Do
  Implement Scoring System
 
  Add Multiple Categories
@@ -225,9 +225,9 @@ class QuizScreen extends StatelessWidget {
 
  Store Quiz Results Locally
 
-🙌 Contributing
+# Contributing
 Feel free to submit pull requests or report issues!
 
-📄 License
+# License
 This project is open-source and available under the MIT License.
 
