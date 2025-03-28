@@ -8,6 +8,8 @@ void main() {
 }
 
 class QuizApp extends StatelessWidget {
+  const QuizApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,6 +21,8 @@ class QuizApp extends StatelessWidget {
 }
 
 class HomeScreenData extends StatefulWidget {
+  const HomeScreenData({super.key});
+
   @override
   State<HomeScreenData> createState() => _HomeScreenDataState();
 }

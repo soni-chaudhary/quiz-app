@@ -1,8 +1,4 @@
-
-
-
-import 'package:quiz_app/util/stringConstants.dart';
-
+import 'package:quiz_app/util/string_constants.dart';
 class Utils {
   static String getErrorMessage(
       {required int statusCode,

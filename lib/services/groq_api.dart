@@ -7,7 +7,7 @@ class GroqApiService {
 
   Future<Map<String, dynamic>> fetchQuestions(
       String topic, String selectedDifficulty) async {
-    var payload = jsonEncode({
+    Map<String, dynamic> payload = {
       "model": "llama-3.3-70b-versatile",
       "messages": [
         {
@@ -33,7 +33,7 @@ class GroqApiService {
               "Generate a multiple-choice quiz on $topic with 5 questions, 4 options each, difficulty level $selectedDifficulty, valid json Format, always same format and same key name, and correct answers."
         }
       ]
-    });
+    };
     return await apiCallV1.postCall(jsonEncode(payload));
   }
 }

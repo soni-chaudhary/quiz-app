@@ -7,7 +7,7 @@ class QuizDetailsStateInitial extends QuizDetailsState {}
 class QuizDetailsLoading extends QuizDetailsState {}
 
 class QuizDataFetched extends QuizDetailsState {
-  final Question question;
+  final List<Question> question;
 
   QuizDataFetched({required this.question});
 }

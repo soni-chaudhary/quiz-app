@@ -1,10 +1,10 @@
 
-import 'package:bloc/bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:quiz_app/bloc/get_quiz_data_bloc/quiz_event.dart';
 import 'package:quiz_app/bloc/get_quiz_data_bloc/quiz_state.dart';
 import 'package:quiz_app/models/exception.dart';
 import 'package:quiz_app/repo/get_quiz_data_repo.dart';
-import 'package:quiz_app/util/stringConstants.dart';
+import 'package:quiz_app/util/string_constants.dart';
 
 class QuizDetailsBloc
     extends Bloc<QuizDataEvent, QuizDetailsState> {
